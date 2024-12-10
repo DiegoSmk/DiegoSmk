@@ -1,16 +1,43 @@
-## Hi there 👋
+# 👋 Olá! Bem-vindo ao meu GitHub!
 
-<!--
-**DiegoSmk/DiegoSmk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+```kotlin
+import classes.*
 
-Here are some ideas to get you started:
+fun Human.haveCoffee() {
+    println("$name is having coffee... ☕🔥 Ready to dive into code!")
+}
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+fun Human.celebrateSuccess(project: String) {
+    println("$name just finished the project '$project'! 🎉🎉 Time to take a break with some coffee... ☕")
+}
+
+fun main() {
+    val diegoSmk = Human(
+        name = "Diego Pena",
+        company = "Brazilian Navy", // 🎖️ Militar
+        role = "Second Sergeant",
+        specialization = "Communications Technician",
+
+        skills = Skills(
+            languages = listOf("Kotlin", "JavaScript", "TypeScript", "Python"), // 💻 Linguagens
+            focus = listOf("Kotlin", "Jetpack Compose", "KMP") // 🔧 Tecnologias em foco
+        ),
+
+        interests = Interests(
+            cryptography = true, // 🔐 Criptografia
+            ai = true, // 🤖 Inteligência Artificial
+        ),
+
+        education = Education(
+            course = "Software Engineering", // 📚 Engenharia de Software
+            status = EducationStatus.CURRENTLY_ENROLLED // 🎓 Em andamento
+        ),
+
+        links = Links(
+            linkedin = "www.linkedin.com/in/diego-pena-2b1967334",
+        )
+    )
+
+    diegoSmk.haveCoffee()
+}
+```
